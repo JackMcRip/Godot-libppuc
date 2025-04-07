@@ -1,0 +1,1042 @@
+ppucVersion: 1
+rom: dummy
+serialPort: com3
+platform: DE
+coinDoorClosedSwitch: 12
+gameOnSolenoid: 19
+debug: false
+boards:
+  -
+    description: (0)_IO-Board_16-8-1_Cabinet
+    number: 0
+    pollEvents: true
+  -
+    description: (1)_IO-Board_16-8-1_Playfield_1
+    number: 1
+    pollEvents: true
+  -
+    description: (2)_IO-Board_16-8-1_Playfield_2
+    number: 2
+    pollEvents: true
+  -
+    description: (3)_IO-Board_16-8-1_Playfield_3_Lower-PF
+    number: 4
+    pollEvents: true
+dipSwitches: {  }
+switches:
+  -
+    description: OUTHOLE
+    number: 1
+    board: 1
+    port: 3
+  -
+    description: 'LEFT AND RIGHT OF OUTHOLE'
+    number: 2
+    board: 1
+    port: 4
+  -
+    description: 'RIGHT SAUCER'
+    number: 3
+    board: 1
+    port: 8
+  -
+    description: 'TOP SAUCER'
+    number: 4
+    board: 2
+    port: 8
+  -
+    description: 'FLIPPER BUTTON LEFT'
+    number: 5
+    board: 0
+    port: 3
+  -
+    description: 'CREDIT BUTTON'
+    number: 6
+    board: 0
+    port: 18
+  -
+    description: '2X BONUS TARGET (LOWER LEVEL)'
+    number: 7
+    board: 3
+    port: 4
+  -
+    description: 'SAUCER (LOWER LEVEL)'
+    number: 8
+    board: 3
+    port: 3
+  -
+    description: 'swCOIN5 (5.-DM)'
+    number: 9
+    board: 0
+    port: 13
+  -
+    description: 'swCOIN1 (1.-DM)'
+    number: 10
+    board: 0
+    port: 9
+  -
+    description: 'swCOIN2 (2.-DM)'
+    number: 11
+    board: 0
+    port: 10
+  -
+    description: 'SHOOTER LANE ROLLOVER'
+    number: 12
+    board: 1
+    port: 5
+  -
+    description: 'RIGHT OUTLANE'
+    number: 13
+    board: 1
+    port: 5
+  -
+    description: 'LEFT OUTLANE'
+    number: 14
+    board: 1
+    port: 7
+  -
+    description: 'FLIPPERS E.O.S. (LOWER LEVEL) -L'
+    number: 17
+    board: 0
+    port: 4
+  -
+    description: 'FLIPPERS E.O.S. (LOWER LEVEL) -R'
+    number: 17
+    board: 0
+    port: 5
+  -
+    description: Spinner
+    number: 17
+    board: 3
+    port: 13
+  -
+    description: '1ST INLINE DROP TARGET'
+    number: 18
+    board: 2
+    port: 15
+  -
+    description: '2ND INLINE DROP TARGET'
+    number: 19
+    board: 2
+    port: 16
+  -
+    description: 'INLINE BACK TARGET'
+    number: 20
+    board: 2
+    port: 17
+  -
+    description: '#1 TOP TARGET & LOWER LEVEL #1 TARGET'
+    number: 21
+    board: 3
+    port: 7
+  -
+    description: '#1 TOP TARGET & LOWER LEVEL #1 TARGET'
+    number: 21
+    board: 3
+    port: 15
+  -
+    description: '#2 TOP TARGET & LOWER LEVEL #2 TARGET'
+    number: 22
+    board: 3
+    port: 8
+  -
+    description: '#2 TOP TARGET & LOWER LEVEL #2 TARGET'
+    number: 22
+    board: 3
+    port: 16
+  -
+    description: '#3 TOP TARGET & LOWER LEVEL #3 TARGET'
+    number: 23
+    board: 3
+    port: 9
+  -
+    description: '#3 TOP TARGET & LOWER LEVEL #3 TARGET'
+    number: 23
+    board: 3
+    port: 17
+  -
+    description: 'SPECIAL ROLLOVER BUTTON'
+    number: 24
+    board: 2
+    port: 3
+  -
+    description: 'RIGHT SPINNER & LOWER LEVEL RIGHT R.O. BUTTON'
+    number: 25
+    board: 3
+    port: 13
+  -
+    description: 'RIGHT SPINNER & LOWER LEVEL RIGHT R.O. BUTTON'
+    number: 25
+    board: 3
+    port: 5
+  -
+    description: 'LEFT SPINNER & LOWER LEVEL LEFT R.O. BUTTON'
+    number: 26
+    board: 3
+    port: 14
+  -
+    description: 'LEFT SPINNER & LOWER LEVEL LEFT R.O. BUTTON'
+    number: 26
+    board: 3
+    port: 6
+  -
+    description: 'TOP RIGHT 3 R.O. BUTTONS'
+    number: 27
+    board: 2
+    port: 9
+  -
+    description: 'TOP RIGHT 3 R.O. BUTTONS'
+    number: 27
+    board: 2
+    port: 10
+  -
+    description: 'TOP RIGHT 3 R.O. BUTTONS'
+    number: 27
+    board: 2
+    port: 11
+  -
+    description: 'TOP LEFT 3 R.O. BUTTONS'
+    number: 28
+    board: 2
+    port: 12
+  -
+    description: 'TOP LEFT 3 R.O. BUTTONS'
+    number: 28
+    board: 2
+    port: 14
+  -
+    description: 'MIDDLE #1 TARGET (L) & LOWER LEVEL #4 TARGET'
+    number: 29
+    board: 1
+    port: 11
+  -
+    description: 'MIDDLE #1 TARGET (L) & LOWER LEVEL #4 TARGET'
+    number: 29
+    board: 3
+    port: 10
+  -
+    description: 'MIDDLE #2 TARGET  & LOWER LEVEL #5 TARGET'
+    number: 30
+    board: 1
+    port: 12
+  -
+    description: 'MIDDLE #2 TARGET  & LOWER LEVEL #5 TARGET'
+    number: 30
+    board: 3
+    port: 11
+  -
+    description: 'MIDDLE #3 TARGET (R) & LOWER LEVEL #6 TARGET'
+    number: 31
+    board: 1
+    port: 13
+  -
+    description: 'MIDDLE #3 TARGET (R) & LOWER LEVEL #6 TARGET'
+    number: 31
+    board: 3
+    port: 12
+  -
+    description: '10 POINT REBOUND (2)'
+    number: 32
+    board: 2
+    port: 6
+  -
+    description: '10 POINT REBOUND (2)'
+    number: 32
+    board: 2
+    port: 7
+  -
+    description: 'LEFT SIDE #1'
+    number: 33
+    board: 1
+    port: 14
+  -
+    description: 'LEFT SIDE #1 TARGET (BOTTOM)'
+    number: 33
+    board: 1
+    port: 14
+  -
+    description: 'LEFT SIDE #2 TARGET'
+    number: 34
+    board: 1
+    port: 15
+  -
+    description: 'LEFT SIDE #3 TARGET'
+    number: 35
+    board: 1
+    port: 16
+  -
+    description: 'LEFT SIDE #4 TARGET'
+    number: 36
+    board: 1
+    port: 17
+  -
+    description: 'LEFT SIDE #5 TARGET'
+    number: 37
+    board: 1
+    port: 18
+  -
+    description: 'TOP SHOOTER LANE R.O. BUTTON (2)'
+    number: 38
+    board: 2
+    port: 4
+  -
+    description: 'TOP SHOOTER LANE R.O. BUTTON (2)'
+    number: 38
+    board: 2
+    port: 5
+  -
+    description: 'RIGHT SLINGSHOT'
+    number: 39
+    board: 1
+    port: 9
+  -
+    description: 'LEFT SLINGSHOT'
+    number: 40
+    board: 1
+    port: 10
+  -
+    description: 'Left Flipper Button'
+    number: 201
+    board: 0
+    port: 4
+  -
+    description: 'FLIPPER SWITCH LEFT'
+    number: 202
+    board: 0
+    port: 4
+  -
+    description: 'Right Upper Flipper Button'
+    number: 202
+    board: 1
+    port: 5
+  -
+    description: 'FLIPPER SWITCH RIGHT'
+    number: 203
+    board: 0
+    port: 5
+  -
+    description: 'Right Flipper Button'
+    number: 203
+    board: 0
+    port: 5
+  -
+    description: SELFTEST
+    number: 247
+    board: 0
+    port: 17
+ledStripes:
+  -
+    description: LED_CABINET
+    board: 0
+    port: 29
+    ledType: GBR
+    brightness: 255
+    amount: 5
+    lightUp: 5
+    afterGlow: 5
+    lamps:
+      -
+        description: 2€
+        number: 2
+        ledNumber: 2
+        color: 00FF04
+      -
+        description: 1€
+        number: 3
+        ledNumber: 3
+        color: FF00EA
+      -
+        description: 'High Score'
+        number: 4
+        ledNumber: 4
+        color: FFFFFF
+    flashers: {  }
+    gi:
+      -
+        description: 'Left Flipper Button Bottom'
+        number: 1
+        ledNumber: 0
+        color: FFFFFF
+  -
+    description: LED_PLAYFIELD_1+2
+    board: 1
+    port: 29
+    ledType: GBR
+    brightness: 255
+    amount: 86
+    lightUp: 100
+    afterGlow: 200
+    lamps:
+      -
+        description: 4K-BONUS
+        number: 10
+        ledNumber: 69
+        color: FFFFFF
+      -
+        description: '#1 TOP TARGET'
+        number: 12
+        ledNumber: 22
+        color: FFFFFF
+      -
+        description: '#5 TOP O.R. BUTTON'
+        number: 12
+        ledNumber: 13
+        color: FF0000
+      -
+        description: '#3 TOP TARGET'
+        number: 13
+        ledNumber: 24
+        color: FFFFFF
+      -
+        description: '#1 BLUE TARGET'
+        number: 13
+        ledNumber: 84
+        color: BDD9FF
+      -
+        description: '#5 BLUE TARGET'
+        number: 14
+        ledNumber: 80
+        color: BDD9FF
+      -
+        description: '#1 MIDDLE LEFT TARGET'
+        number: 15
+        ledNumber: 42
+        color: BDD9FF
+      -
+        description: 'SPECIAL R.O. BUTTON'
+        number: 15
+        ledNumber: 33
+        color: FF0000
+      -
+        description: '10 ELEKTRA UNITS'
+        number: 20
+        ledNumber: 20
+        color: 3D9BFF
+      -
+        description: SPECIAL_LEFT_OUTLANE
+        number: 21
+        ledNumber: 0
+        color: FF0000
+      -
+        description: 8K-BONUS
+        number: 21
+        ledNumber: 62
+        color: FFFFFF
+      -
+        description: '#2 BLUE TARGET'
+        number: 23
+        ledNumber: 83
+        color: BDD9FF
+      -
+        description: '#6 TOP O.R. BUTTON'
+        number: 23
+        ledNumber: 7
+        color: FF0000
+      -
+        description: 'SAME PLAYER SHOOT AGAIN'
+        number: 23
+        ledNumber: 56
+        color: FF0000
+      -
+        description: '#6 TOP TARGET ARROW'
+        number: 25
+        ledNumber: 19
+        color: FFFFFF
+      -
+        description: 'LEFT SPINNER ARROW'
+        number: 25
+        ledNumber: 85
+        color: FF0000
+      -
+        description: 'RIGHT SAUCER ARROW'
+        number: 30
+        ledNumber: 52
+        color: 87FF5C
+      -
+        description: '#2 MIDDLE CENTER TARGET'
+        number: 34
+        ledNumber: 43
+        color: BDD9FF
+      -
+        description: '#1 TOP O.R. BUTTON'
+        number: 34
+        ledNumber: 6
+        color: FF0000
+      -
+        description: 7K-BONUS
+        number: 36
+        ledNumber: 63
+        color: FFFFFF
+      -
+        description: '#3 MIDDLE RIGHT TARGET'
+        number: 40
+        ledNumber: 44
+        color: BDD9FF
+      -
+        description: 6K-BONUS
+        number: 43
+        ledNumber: 64
+        color: FFFFFF
+      -
+        description: '#2 TOP TARGET'
+        number: 45
+        ledNumber: 23
+        color: FFFFFF
+      -
+        description: 10K-BONUS
+        number: 51
+        ledNumber: 68
+        color: FFFFFF
+      -
+        description: 3K-BONUS
+        number: 52
+        ledNumber: 76
+        color: FFFFFF
+      -
+        description: '#5 TOP TARGET ARROW'
+        number: 52
+        ledNumber: 18
+        color: FFFFFF
+      -
+        description: 'RIGHT OUTLINE SPECIAL'
+        number: 53
+        ledNumber: 54
+        color: FF24A4
+      -
+        description: 'BONUS SPECIAL'
+        number: 53
+        ledNumber: 67
+        color: FF0000
+      -
+        description: 9K-BONUS
+        number: 57
+        ledNumber: 61
+        color: FFFFFF
+      -
+        description: 'CREDIT INDICATOR'
+        number: 57
+        ledNumber: 31
+        color: FEFFB3
+      -
+        description: 1K-BONUS
+        number: 58
+        ledNumber: 72
+        color: FFFFFF
+      -
+        description: 'LEFT OUTLINE SPECIAL'
+        number: 61
+        ledNumber: 86
+        color: FF4000
+      -
+        description: 5K-BONUS
+        number: 65
+        ledNumber: 60
+        color: FFFFFF
+      -
+        description: '3x BONUS'
+        number: 65
+        ledNumber: 79
+        color: 67FF3D
+      -
+        description: 20K-BONUS
+        number: 67
+        ledNumber: 66
+        color: FFFFFF
+      -
+        description: '#4 TOP TARGET ARROW'
+        number: 67
+        ledNumber: 21
+        color: FFFFFF
+      -
+        description: 'LEFT OUTLANE 10 UNITS'
+        number: 72
+        ledNumber: 75
+        color: 76B1FE
+      -
+        description: 2K-BONUS
+        number: 75
+        ledNumber: 71
+        color: FFFFFF
+      -
+        description: '2x BONUS'
+        number: 75
+        ledNumber: 78
+        color: 67FF3D
+      -
+        description: 'RIGHT SPINNER ARROW'
+        number: 78
+        ledNumber: 44
+        color: FF0000
+      -
+        description: '5x BONUS'
+        number: 78
+        ledNumber: 55
+        color: 67FF3D
+      -
+        description: '#4 BLUE TARGET'
+        number: 81
+        ledNumber: 81
+        color: BDD9FF
+      -
+        description: '#3 TOP O.R. BUTTON'
+        number: 85
+        ledNumber: 14
+        color: FF0000
+      -
+        description: 'TOP SAUCER ARROW'
+        number: 95
+        ledNumber: 25
+        color: 87FF5C
+      -
+        description: '#4 TOP O.R. BUTTON'
+        number: 96
+        ledNumber: 15
+        color: FF0000
+      -
+        description: '#3 BLUE TARGET'
+        number: 98
+        ledNumber: 82
+        color: BDD9FF
+      -
+        description: '#2 TOP O.R. BUTTON'
+        number: 98
+        ledNumber: 9
+        color: FF0000
+    flashers: {  }
+    gi:
+      -
+        description: GI_LEFT_1_5erTARGETS
+        number: 1
+        ledNumber: 1
+        color: 86C4FE
+      -
+        description: GI_LEFT_2_5erTARGETS
+        number: 1
+        ledNumber: 2
+        color: 86C4FE
+      -
+        description: GI_LEFT_3_5erTARGETS
+        number: 1
+        ledNumber: 3
+        color: 86C4FE
+      -
+        description: GI_LEFT_4_Spinner
+        number: 1
+        ledNumber: 4
+        color: 86C4FE
+      -
+        description: GI_LEFT_5_Spinner
+        number: 1
+        ledNumber: 5
+        color: 86C4FE
+      -
+        description: GI_Top-LEFT-Edge_1
+        number: 1
+        ledNumber: 10
+        color: 86C4FE
+      -
+        description: GI_Top-LEFT-Edge_2
+        number: 1
+        ledNumber: 11
+        color: 86C4FE
+      -
+        description: GI_Top-Center_1
+        number: 1
+        ledNumber: 16
+        color: 86C4FE
+      -
+        description: GI_Top-Center_2
+        number: 1
+        ledNumber: 17
+        color: 86C4FE
+      -
+        description: GI_Top-RIGHT_1
+        number: 1
+        ledNumber: 26
+        color: 86C4FE
+      -
+        description: GI_Top-RIGHT_2
+        number: 1
+        ledNumber: 27
+        color: 86C4FE
+      -
+        description: GI_Top-RIGHT_3
+        number: 1
+        ledNumber: 28
+        color: 86C4FE
+      -
+        description: GI_Top-LEFT-Flipper-RAMP_1
+        number: 1
+        ledNumber: 39
+        color: 86C4FE
+      -
+        description: GI_Top-RIGHT_4
+        number: 1
+        ledNumber: 29
+        color: 86C4FE
+      -
+        description: GI_RIGHT-SPINNER_2
+        number: 1
+        ledNumber: 30
+        color: 86C4FE
+      -
+        description: GI_RIGHT-SPINNER_1
+        number: 1
+        ledNumber: 47
+        color: 86C4FE
+      -
+        description: GI_RIGHT-SPINNER_0
+        number: 1
+        ledNumber: 48
+        color: 86C4FE
+      -
+        description: GI_CENTER-RIGHT
+        number: 1
+        ledNumber: 45
+        color: 86C4FE
+      -
+        description: GI_RIGHT-RAMP
+        number: 1
+        ledNumber: 46
+        color: 86C4FE
+      -
+        description: GI_CENTER-LEFT
+        number: 1
+        ledNumber: 41
+        color: 86C4FE
+      -
+        description: GI_Top-LEFT-Flipper-RAMP_0
+        number: 1
+        ledNumber: 40
+        color: 86C4FE
+      -
+        description: GI_Top-LEFT-R.O.-LANE_0
+        number: 1
+        ledNumber: 8
+        color: 86C4FE
+      -
+        description: GI_Top-LEFT-R.O.-LANE_1
+        number: 1
+        ledNumber: 12
+        color: 86C4FE
+      -
+        description: GI_TOP-CENTER-LEFT
+        number: 1
+        ledNumber: 38
+        color: 86C4FE
+      -
+        description: GI_TOP-CENTER-RIGHT
+        number: 1
+        ledNumber: 37
+        color: 0400FF
+      -
+        description: GI_RIGHT-SAUCER_0
+        number: 1
+        ledNumber: 50
+        color: 86C4FE
+      -
+        description: GI_RIGHT-SAUCER_1
+        number: 1
+        ledNumber: 51
+        color: 86C4FE
+      -
+        description: GI_RIGHT-SAUCER_2
+        number: 1
+        ledNumber: 53
+        color: 86C4FE
+      -
+        description: GI_RIGHT-SLINGSHOT_0
+        number: 1
+        ledNumber: 58
+        color: 86C4FE
+      -
+        description: GI_RIGHT-SLINGSHOT_1
+        number: 1
+        ledNumber: 59
+        color: 86C4FE
+      -
+        description: GI_RIGHT-SLINGSHOT_2
+        number: 1
+        ledNumber: 60
+        color: 86C4FE
+      -
+        description: LEFT-SLINGSHOT_0
+        number: 1
+        ledNumber: 77
+        color: 86C4FE
+      -
+        description: LEFT-SLINGSHOT_1
+        number: 1
+        ledNumber: 76
+        color: 86C4FE
+      -
+        description: LEFT-SLINGSHOT_2
+        number: 1
+        ledNumber: 74
+        color: 86C4FE
+      -
+        description: LEFT-SLINGSHOT_3
+        number: 1
+        ledNumber: 73
+        color: 86C4FE
+      -
+        description: GI_Top-RIGHT_5
+        number: 1
+        ledNumber: 35
+        color: A9F4FE
+      -
+        description: GI_Top-RIGHT_6
+        number: 1
+        ledNumber: 32
+        color: 10FAFE
+      -
+        description: GI_Top-RIGHT-Flipper-GATE
+        number: 1
+        ledNumber: 34
+        color: 86C4FE
+  -
+    description: LED-Lower_Playfield
+    board: 4
+    port: 29
+    ledType: GBR
+    brightness: 255
+    amount: 34
+    lightUp: 100
+    afterGlow: 200
+    lamps:
+      -
+        description: '5K ELEKTRA BONUS'
+        number: 10
+        ledNumber: 0
+        color: FFFFFF
+      -
+        description: '10K ELEKTRA BONUS'
+        number: 12
+        ledNumber: 5
+        color: FFFFFF
+      -
+        description: '15K ELEKTRA BONUS'
+        number: 13
+        ledNumber: 6
+        color: FFFFFF
+      -
+        description: '20K ELEKTRA BONUS'
+        number: 14
+        ledNumber: 15
+        color: FFFFFF
+      -
+        description: '25K ELEKTRA BONUS'
+        number: 15
+        ledNumber: 12
+        color: FFFFFF
+      -
+        description: '30K ELEKTRA BONUS'
+        number: 18
+        ledNumber: 11
+        color: FFFFFF
+      -
+        description: '35K ELEKTRA BONUS'
+        number: 20
+        ledNumber: 9
+        color: FFFFFF
+      -
+        description: '40K ELEKTRA BONUS'
+        number: 21
+        ledNumber: 8
+        color: FFFFFF
+      -
+        description: '#6 RIGHT TARGET ARROW (LOWER PANEL)'
+        number: 25
+        ledNumber: 33
+        color: FFA200
+      -
+        description: 'LEFT O.R. ARROW (LOWER PANEL)'
+        number: 40
+        ledNumber: 25
+        color: FF0040
+      -
+        description: '#5 RIGHT TARGET ARROW (LOWER PANEL)'
+        number: 43
+        ledNumber: 32
+        color: FFA200
+      -
+        description: 'RIGHT O.R. ARROW (LOWER PANEL)'
+        number: 45
+        ledNumber: 30
+        color: FF0040
+      -
+        description: '45K ELEKTRA BONUS'
+        number: 51
+        ledNumber: 4
+        color: FFFFFF
+      -
+        description: '50K ELEKTRA BONUS'
+        number: 52
+        ledNumber: 3
+        color: FFFFFF
+      -
+        description: '100K ELEKTRA BONUS'
+        number: 53
+        ledNumber: 7
+        color: FFFFFF
+      -
+        description: '#4 RIGHT TARGET ARROW (LOWER PANEL)'
+        number: 54
+        ledNumber: 31
+        color: FFA200
+      -
+        description: '2X ELEKTRA BONUS'
+        number: 56
+        ledNumber: 18
+        color: 3D9BFF
+      -
+        description: '#2 LEFT TARGET ARROW (LOWER PANEL)'
+        number: 57
+        ledNumber: 16
+        color: FFA200
+      -
+        description: '#3 LEFT TARGET ARROW (LOWER PANEL)'
+        number: 70
+        ledNumber: 17
+        color: FFA200
+      -
+        description: '#1 LEFT TARGET ARROW (LOWER PANEL)'
+        number: 80
+        ledNumber: 13
+        color: FFA200
+    flashers: {  }
+    gi: {  }
+pwmOutput:
+  -
+    description: 'L.FLIP SW'
+    type: coil
+    number: 10
+    board: 1
+    port: 19
+    power: 128
+    holdPower: 0
+    holdPowerActivationTime: 0
+    minPulseTime: 0
+    maxPulseTime: 0
+    fastFlipSwitch: 5
+  -
+    description: 'R.FLIP SW'
+    type: coil
+    number: 20
+    board: 1
+    port: 24
+    power: 128
+    holdPower: 0
+    holdPowerActivationTime: 0
+    minPulseTime: 0
+    maxPulseTime: 0
+    fastFlipSwitch: 203
+  -
+    description: 'SAUCER (LOWER LEVEL)'
+    type: coil
+    number: 67
+    board: 3
+    port: 22
+    power: 128
+    holdPower: 0
+    holdPowerActivationTime: 0
+    minPulseTime: 0
+    maxPulseTime: 0
+    fastFlipSwitch: 0
+  -
+    description: 'INLINE DROP TARGET RESET'
+    type: coil
+    number: 74
+    board: 2
+    port: 19
+    power: 128
+    holdPower: 0
+    holdPowerActivationTime: 0
+    minPulseTime: 0
+    maxPulseTime: 0
+    fastFlipSwitch: 0
+  -
+    description: 'RIGHT SLINGSHOT'
+    type: coil
+    number: 80
+    board: 1
+    port: 26
+    power: 128
+    holdPower: 0
+    holdPowerActivationTime: 0
+    minPulseTime: 0
+    maxPulseTime: 0
+    fastFlipSwitch: 39
+  -
+    description: GATE
+    type: coil
+    number: 81
+    board: 1
+    port: 20
+    power: 128
+    holdPower: 0
+    holdPowerActivationTime: 0
+    minPulseTime: 0
+    maxPulseTime: 0
+    fastFlipSwitch: 0
+  -
+    description: 'TOP SAUCER'
+    type: coil
+    number: 85
+    board: 1
+    port: 22
+    power: 128
+    holdPower: 0
+    holdPowerActivationTime: 0
+    minPulseTime: 0
+    maxPulseTime: 0
+    fastFlipSwitch: 0
+  -
+    description: 'LEFT SLINGSHOT'
+    type: coil
+    number: 85
+    board: 1
+    port: 26
+    power: 128
+    holdPower: 0
+    holdPowerActivationTime: 0
+    minPulseTime: 0
+    maxPulseTime: 0
+    fastFlipSwitch: 40
+  -
+    description: OUTHOLE
+    type: coil
+    number: 95
+    board: 1
+    port: 27
+    power: 128
+    holdPower: 0
+    holdPowerActivationTime: 0
+    minPulseTime: 0
+    maxPulseTime: 0
+    fastFlipSwitch: 0
+  -
+    description: 'FLIPPER FINGER RIGHT'
+    type: coil
+    number: 103
+    board: 1
+    port: 24
+    power: 128
+    holdPower: 0
+    holdPowerActivationTime: 0
+    minPulseTime: 0
+    maxPulseTime: 0
+    fastFlipSwitch: 203
+  -
+    description: 'FLIPPER FINGER LEFT'
+    type: coil
+    number: 202
+    board: 1
+    port: 19
+    power: 128
+    holdPower: 0
+    holdPowerActivationTime: 0
+    minPulseTime: 0
+    maxPulseTime: 0
+    fastFlipSwitch: 5
+mechs: {  }

@@ -1,0 +1,372 @@
+[gd_scene load_steps=12 format=3 uid="uid://dr4tloi0gmiuu"]
+
+[ext_resource type="Script" path="res://PPUCYAMLparser.gd" id="1_4ia1q"]
+[ext_resource type="Script" path="res://libppuc.gd" id="2_8ln8l"]
+[ext_resource type="Script" path="res://scripts/ppuc_lamps_gui.gd" id="3_wc518"]
+[ext_resource type="Script" path="res://SetupGUI.gd" id="3_xuxv1"]
+[ext_resource type="Script" path="res://scripts/ppuc_connect_button.gd" id="4_1owat"]
+[ext_resource type="Script" path="res://scripts/ppuc_switch_gui.gd" id="4_jbttv"]
+[ext_resource type="Script" path="res://scripts/Clear_Console.gd" id="4_y44nu"]
+[ext_resource type="Script" path="res://scripts/Parse_Config_Button.gd" id="6_mb08l"]
+[ext_resource type="Script" path="res://scripts/set_lamps_button.gd" id="7_dx037"]
+[ext_resource type="Script" path="res://scripts/set_coils_button.gd" id="8_ikdfp"]
+[ext_resource type="Script" path="res://scripts/set_switches_button.gd" id="9_dyktl"]
+
+[node name="Main-Control" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="PPUC-YAML-Parser" type="Control" parent="."]
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+script = ExtResource("1_4ia1q")
+
+[node name="PPUC-LIBPPUC" type="Control" parent="."]
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+script = ExtResource("2_8ln8l")
+
+[node name="PPUC-Element-GUIGEN" type="Control" parent="."]
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+script = ExtResource("3_wc518")
+
+[node name="PPUC-Switch-GUI" type="Control" parent="."]
+anchors_preset = 0
+offset_left = 603.0
+offset_top = 159.0
+offset_right = 1070.0
+offset_bottom = 513.0
+script = ExtResource("4_jbttv")
+
+[node name="HBoxContainer" type="HBoxContainer" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Steuerung" type="VBoxContainer" parent="HBoxContainer"]
+custom_minimum_size = Vector2(300, 0)
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="HBoxContainer" type="HBoxContainer" parent="HBoxContainer/Steuerung"]
+layout_mode = 2
+
+[node name="ppuc_connect_button" type="CheckButton" parent="HBoxContainer/Steuerung/HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 4
+tooltip_text = "Connect to PPUC-Board via RS485"
+text = "Connect PPUC   "
+alignment = 1
+script = ExtResource("4_1owat")
+
+[node name="comport" type="TextEdit" parent="HBoxContainer/Steuerung/HBoxContainer"]
+custom_minimum_size = Vector2(0, 32)
+layout_mode = 2
+size_flags_horizontal = 3
+text = "COM3"
+placeholder_text = "COM3"
+
+[node name="HBoxContainer4" type="HBoxContainer" parent="HBoxContainer/Steuerung"]
+layout_mode = 2
+
+[node name="Debugging" type="CheckButton" parent="HBoxContainer/Steuerung/HBoxContainer4"]
+layout_mode = 2
+size_flags_horizontal = 4
+tooltip_text = "Connect to PPUC-Board via RS485"
+theme_override_colors/font_outline_color = Color(1, 1, 1, 1)
+theme_override_colors/icon_hover_color = Color(0.0588235, 0.0980392, 0, 1)
+text = "Debugging "
+alignment = 1
+
+[node name="Button" type="Button" parent="HBoxContainer/Steuerung/HBoxContainer4"]
+layout_mode = 2
+size_flags_horizontal = 3
+text = "Clear Console"
+script = ExtResource("4_y44nu")
+
+[node name="HSeparator" type="HSeparator" parent="HBoxContainer/Steuerung"]
+layout_mode = 2
+
+[node name="Config-Label" type="Label" parent="HBoxContainer/Steuerung"]
+layout_mode = 2
+text = "Config-Datei:"
+
+[node name="configpath" type="TextEdit" parent="HBoxContainer/Steuerung"]
+custom_minimum_size = Vector2(0, 32)
+layout_mode = 2
+theme_override_font_sizes/font_size = 14
+text = "res://config/elektra.yml"
+placeholder_text = "res://config/exlektra.yml"
+
+[node name="ParseConfig" type="Button" parent="HBoxContainer/Steuerung"]
+layout_mode = 2
+size_flags_horizontal = 3
+text = "config parsing"
+script = ExtResource("6_mb08l")
+
+[node name="HBoxContainer2" type="HBoxContainer" parent="HBoxContainer/Steuerung"]
+layout_mode = 2
+
+[node name="SetLamps" type="Button" parent="HBoxContainer/Steuerung/HBoxContainer2"]
+layout_mode = 2
+size_flags_horizontal = 3
+text = "Set Lamps"
+script = ExtResource("7_dx037")
+
+[node name="SetCoils" type="Button" parent="HBoxContainer/Steuerung/HBoxContainer2"]
+layout_mode = 2
+size_flags_horizontal = 3
+text = "Set Coils"
+script = ExtResource("8_ikdfp")
+
+[node name="SetSwitches" type="Button" parent="HBoxContainer/Steuerung/HBoxContainer2"]
+layout_mode = 2
+size_flags_horizontal = 3
+text = "Set Switches"
+script = ExtResource("9_dyktl")
+
+[node name="Lamps-Label2" type="Label" parent="HBoxContainer/Steuerung"]
+layout_mode = 2
+size_flags_horizontal = 3
+text = "Lamps:"
+
+[node name="HBoxContainer3" type="HBoxContainer" parent="HBoxContainer/Steuerung"]
+layout_mode = 2
+
+[node name="AllOn_Button" type="Button" parent="HBoxContainer/Steuerung/HBoxContainer3"]
+layout_mode = 2
+size_flags_horizontal = 3
+text = "All On"
+
+[node name="AllOff_Button" type="Button" parent="HBoxContainer/Steuerung/HBoxContainer3"]
+layout_mode = 2
+size_flags_horizontal = 3
+text = "All Off"
+
+[node name="CheckButton" type="CheckButton" parent="HBoxContainer/Steuerung/HBoxContainer3"]
+layout_mode = 2
+text = "Play"
+
+[node name="Prev" type="Button" parent="HBoxContainer/Steuerung/HBoxContainer3"]
+layout_mode = 2
+size_flags_horizontal = 3
+text = "<"
+
+[node name="Next" type="Button" parent="HBoxContainer/Steuerung/HBoxContainer3"]
+layout_mode = 2
+size_flags_horizontal = 3
+text = ">"
+
+[node name="HBoxContainer5" type="HBoxContainer" parent="HBoxContainer/Steuerung"]
+layout_mode = 2
+
+[node name="GIonoff" type="CheckButton" parent="HBoxContainer/Steuerung/HBoxContainer5"]
+layout_mode = 2
+text = "GI"
+
+[node name="Flashonoff" type="CheckButton" parent="HBoxContainer/Steuerung/HBoxContainer5"]
+layout_mode = 2
+text = "Flasher"
+
+[node name="Lampsonoff" type="CheckButton" parent="HBoxContainer/Steuerung/HBoxContainer5"]
+layout_mode = 2
+button_pressed = true
+text = "Lamps"
+
+[node name="ledStripes_GridContainer" type="GridContainer" parent="HBoxContainer/Steuerung"]
+layout_mode = 2
+size_flags_horizontal = 0
+size_flags_vertical = 0
+columns = 16
+
+[node name="Coils-Label3" type="Label" parent="HBoxContainer/Steuerung"]
+layout_mode = 2
+text = "Coils:
+"
+
+[node name="Switches-Label4" type="Label" parent="HBoxContainer/Steuerung"]
+layout_mode = 2
+text = "Switches:"
+
+[node name="HBoxContainer6" type="HBoxContainer" parent="HBoxContainer/Steuerung"]
+layout_mode = 2
+
+[node name="Speech-CheckButton" type="CheckButton" parent="HBoxContainer/Steuerung/HBoxContainer6"]
+layout_mode = 2
+button_pressed = true
+text = "Speech"
+
+[node name="Speech-Exp-CheckButton2" type="CheckButton" parent="HBoxContainer/Steuerung/HBoxContainer6"]
+layout_mode = 2
+text = "Speech Enhanced"
+
+[node name="HSeparator2" type="HSeparator" parent="HBoxContainer/Steuerung"]
+layout_mode = 2
+
+[node name="MenuButton" type="MenuButton" parent="HBoxContainer/Steuerung"]
+layout_mode = 2
+size_flags_horizontal = 3
+text = "libppuc commands"
+item_count = 24
+popup/item_0/text = "load_configuration"
+popup/item_1/text = "set_debug"
+popup/item_1/id = 1
+popup/item_2/text = "get_debug"
+popup/item_2/id = 2
+popup/item_3/text = "set_rom"
+popup/item_3/id = 3
+popup/item_4/text = "get_rom"
+popup/item_4/id = 4
+popup/item_5/text = "set_serial"
+popup/item_5/id = 5
+popup/item_6/text = "get_serial"
+popup/item_6/id = 6
+popup/item_7/text = "connect_to_hardware"
+popup/item_7/id = 7
+popup/item_8/text = "disconnect_from_hardware"
+popup/item_8/id = 8
+popup/item_9/text = "start_updates"
+popup/item_9/id = 9
+popup/item_10/text = "stop_updates"
+popup/item_10/id = 10
+popup/item_11/text = "set_solenoid_state"
+popup/item_11/id = 11
+popup/item_12/text = "get_solenoid_state"
+popup/item_12/id = 12
+popup/item_13/text = "set_lamp_state"
+popup/item_13/id = 13
+popup/item_14/text = "get_lamp_state"
+popup/item_14/id = 14
+popup/item_15/text = "get_next_switch_state"
+popup/item_15/id = 15
+popup/item_16/text = "get_coin_door_closed_switch"
+popup/item_16/id = 16
+popup/item_17/text = "get_game_on_solenoid"
+popup/item_17/id = 17
+popup/item_18/text = "coil_test"
+popup/item_18/id = 18
+popup/item_19/text = "lamp_test"
+popup/item_19/id = 19
+popup/item_20/text = "switch_test"
+popup/item_20/id = 20
+popup/item_21/text = "get_coils"
+popup/item_21/id = 21
+popup/item_22/text = "get_lamps"
+popup/item_22/id = 22
+popup/item_23/text = "get_switches"
+popup/item_23/id = 23
+
+[node name="TextEdit2" type="TextEdit" parent="HBoxContainer/Steuerung"]
+layout_mode = 2
+size_flags_vertical = 3
+placeholder_text = "command attribute"
+
+[node name="Split-Horizontal" type="VBoxContainer" parent="HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+script = ExtResource("3_xuxv1")
+
+[node name="TOP-GUI" type="MarginContainer" parent="HBoxContainer/Split-Horizontal"]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="Spalten" type="HBoxContainer" parent="HBoxContainer/Split-Horizontal/TOP-GUI"]
+layout_mode = 2
+
+[node name="Lampen" type="VBoxContainer" parent="HBoxContainer/Split-Horizontal/TOP-GUI/Spalten"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="Info" type="VBoxContainer" parent="HBoxContainer/Split-Horizontal/TOP-GUI/Spalten/Lampen"]
+custom_minimum_size = Vector2(0, 125)
+layout_mode = 2
+
+[node name="RichTextLabel" type="RichTextLabel" parent="HBoxContainer/Split-Horizontal/TOP-GUI/Spalten/Lampen/Info"]
+layout_mode = 2
+size_flags_vertical = 3
+text = "Lamps Info"
+
+[node name="Lamps" type="VBoxContainer" parent="HBoxContainer/Split-Horizontal/TOP-GUI/Spalten/Lampen"]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="Coils" type="VBoxContainer" parent="HBoxContainer/Split-Horizontal/TOP-GUI/Spalten"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="Info" type="VBoxContainer" parent="HBoxContainer/Split-Horizontal/TOP-GUI/Spalten/Coils"]
+custom_minimum_size = Vector2(0, 125)
+layout_mode = 2
+
+[node name="RichTextLabel" type="RichTextLabel" parent="HBoxContainer/Split-Horizontal/TOP-GUI/Spalten/Coils/Info"]
+layout_mode = 2
+size_flags_vertical = 3
+text = "Coils Info"
+
+[node name="CoilsGrid" type="VBoxContainer" parent="HBoxContainer/Split-Horizontal/TOP-GUI/Spalten/Coils"]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="Swicthes" type="VBoxContainer" parent="HBoxContainer/Split-Horizontal/TOP-GUI/Spalten"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="Info" type="VBoxContainer" parent="HBoxContainer/Split-Horizontal/TOP-GUI/Spalten/Swicthes"]
+custom_minimum_size = Vector2(0, 125)
+layout_mode = 2
+
+[node name="RichTextLabel" type="RichTextLabel" parent="HBoxContainer/Split-Horizontal/TOP-GUI/Spalten/Swicthes/Info"]
+layout_mode = 2
+size_flags_vertical = 3
+text = "Switches Info"
+
+[node name="SwitchesGrid" type="VBoxContainer" parent="HBoxContainer/Split-Horizontal/TOP-GUI/Spalten/Swicthes"]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="Log-Console" type="MarginContainer" parent="HBoxContainer/Split-Horizontal"]
+custom_minimum_size = Vector2(0, 150)
+layout_mode = 2
+
+[node name="ScrollContainer" type="ScrollContainer" parent="HBoxContainer/Split-Horizontal/Log-Console"]
+layout_mode = 2
+follow_focus = true
+
+[node name="VBoxContainer" type="VBoxContainer" parent="HBoxContainer/Split-Horizontal/Log-Console/ScrollContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="Console" type="RichTextLabel" parent="HBoxContainer/Split-Horizontal/Log-Console/ScrollContainer/VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+text = "Log Console"
+
+[connection signal="pressed" from="HBoxContainer/Steuerung/HBoxContainer/ppuc_connect_button" to="PPUC-LIBPPUC" method="_on_ppuc_connect_button_pressed"]
+[connection signal="toggled" from="HBoxContainer/Steuerung/HBoxContainer/ppuc_connect_button" to="HBoxContainer/Steuerung/HBoxContainer/ppuc_connect_button" method="_on_toggled"]
+[connection signal="pressed" from="HBoxContainer/Steuerung/HBoxContainer4/Button" to="HBoxContainer/Steuerung/HBoxContainer4/Button" method="_on_pressed"]
+[connection signal="pressed" from="HBoxContainer/Steuerung/ParseConfig" to="HBoxContainer/Steuerung/ParseConfig" method="_on_pressed"]
+[connection signal="pressed" from="HBoxContainer/Steuerung/HBoxContainer2/SetLamps" to="HBoxContainer/Steuerung/HBoxContainer2/SetLamps" method="_on_pressed"]
+[connection signal="pressed" from="HBoxContainer/Steuerung/HBoxContainer2/SetCoils" to="HBoxContainer/Steuerung/HBoxContainer2/SetCoils" method="_on_pressed"]
+[connection signal="pressed" from="HBoxContainer/Steuerung/HBoxContainer2/SetSwitches" to="HBoxContainer/Steuerung/HBoxContainer2/SetSwitches" method="_on_pressed"]
+[connection signal="pressed" from="HBoxContainer/Steuerung/HBoxContainer3/AllOn_Button" to="PPUC-Element-GUIGEN" method="_on_all_on_button_pressed"]
+[connection signal="pressed" from="HBoxContainer/Steuerung/HBoxContainer3/AllOff_Button" to="PPUC-Element-GUIGEN" method="_on_all_off_button_pressed"]
+[connection signal="toggled" from="HBoxContainer/Steuerung/HBoxContainer5/GIonoff" to="PPUC-Element-GUIGEN" method="_on_gi_onoff_toggled"]
+[connection signal="toggled" from="HBoxContainer/Steuerung/HBoxContainer5/Flashonoff" to="PPUC-Element-GUIGEN" method="_on_flashonoff_toggled"]
+[connection signal="toggled" from="HBoxContainer/Steuerung/HBoxContainer5/Lampsonoff" to="PPUC-Element-GUIGEN" method="_on_lampsonoff_toggled"]
+[connection signal="toggled" from="HBoxContainer/Steuerung/HBoxContainer6/Speech-CheckButton" to="PPUC-Switch-GUI" method="_on_speech_check_button_toggled"]
+[connection signal="toggled" from="HBoxContainer/Steuerung/HBoxContainer6/Speech-Exp-CheckButton2" to="PPUC-Switch-GUI" method="_on_speech_exp_check_button_2_toggled"]
