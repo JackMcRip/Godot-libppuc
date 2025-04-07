@@ -12,21 +12,26 @@ xmlns="http://www.w3.org/TR/REC-html40">
 <link rel=File-List href="godot-extension-libppuc-Dateien/filelist.xml">
 <link rel=Edit-Time-Data href="godot-extension-libppuc-Dateien/editdata.mso">
 <!--[if !mso]>
-
+<style>
+v\:* {behavior:url(#default#VML);}
+o\:* {behavior:url(#default#VML);}
+w\:* {behavior:url(#default#VML);}
+.shape {behavior:url(#default#VML);}
+</style>
 <![endif]--><!--[if gte mso 9]><xml>
  <o:DocumentProperties>
   <o:Author>Bernd N.</o:Author>
   <o:LastAuthor>Bernd N.</o:LastAuthor>
   <o:Revision>2</o:Revision>
   <o:LastPrinted>2025-04-07T21:11:00Z</o:LastPrinted>
-  <o:Created>2025-04-07T21:19:00Z</o:Created>
-  <o:LastSaved>2025-04-07T21:19:00Z</o:LastSaved>
-  <o:Pages>7</o:Pages>
-  <o:Words>1252</o:Words>
-  <o:Characters>7893</o:Characters>
-  <o:Lines>65</o:Lines>
+  <o:Created>2025-04-07T21:23:00Z</o:Created>
+  <o:LastSaved>2025-04-07T21:23:00Z</o:LastSaved>
+  <o:Pages>1</o:Pages>
+  <o:Words>1272</o:Words>
+  <o:Characters>8015</o:Characters>
+  <o:Lines>66</o:Lines>
   <o:Paragraphs>18</o:Paragraphs>
-  <o:CharactersWithSpaces>9127</o:CharactersWithSpaces>
+  <o:CharactersWithSpaces>9269</o:CharactersWithSpaces>
   <o:Version>16.00</o:Version>
  </o:DocumentProperties>
  <o:OfficeDocumentSettings>
@@ -1104,6 +1109,19 @@ p.MsoSubtitle, li.MsoSubtitle, div.MsoSubtitle
 	mso-font-kerning:1.0pt;
 	mso-ligatures:standardcontextual;
 	mso-fareast-language:EN-US;}
+a:link, span.MsoHyperlink
+	{mso-style-priority:99;
+	color:#467886;
+	mso-themecolor:hyperlink;
+	text-decoration:underline;
+	text-underline:single;}
+a:visited, span.MsoHyperlinkFollowed
+	{mso-style-noshow:yes;
+	mso-style-priority:99;
+	color:#96607D;
+	mso-themecolor:followedhyperlink;
+	text-decoration:underline;
+	text-underline:single;}
 p.MsoListParagraph, li.MsoListParagraph, div.MsoListParagraph
 	{mso-style-priority:34;
 	mso-style-unhide:no;
@@ -2029,7 +2047,8 @@ ul
  </o:shapelayout></xml><![endif]-->
 </head>
 
-<body lang=DE style='tab-interval:35.4pt;word-wrap:break-word'>
+<body lang=DE link="#467886" vlink="#96607D" style='tab-interval:35.4pt;
+word-wrap:break-word'>
 
 <div class=WordSection1>
 
@@ -2045,7 +2064,7 @@ class=SpellE>the</span> Pinball Power-Up Controller (PPUC) <span class=SpellE>pr
 class=SpellE>created</span> an <span class=SpellE>exciting</span> <span
 class=SpellE>pinball</span> <span class=SpellE>hardware</span> interface PPUC <span
 class=SpellE>with</span> <span class=SpellE>their</span> <span class=SpellE>vision</span>
-and <span class=SpellE>dedication.</span><o:p></o:p></b></p>
+and <span class=SpellE>dedication</span>.<o:p></o:p></b></p>
 
 <p class=MsoNormal><b>Special personal <span class=SpellE>thanks</span> <span
 class=SpellE>go</span> <span class=SpellE>to</span> Markus Kalkbrenner <span
@@ -2119,6 +2138,10 @@ class=SpellE>result</span> <span class=SpellE>from</span> <span class=SpellE>usi
 <p class=MsoNormal><b><span style='font-size:14.0pt;line-height:115%;
 color:#215E99;mso-themecolor:text2;mso-themetint:191'>Godot Extension <span
 class=SpellE>for</span> PPUC (Pinball Power-Up Controller) <span class=SpellE>Documentation</span><o:p></o:p></span></b></p>
+
+<p class=MsoNormal><b><a href="https://github.com/PPUC">https://github.com/PPUC</a><o:p></o:p></b></p>
+
+<p class=MsoNormal><b><a href="https://github.com/PPUC/libppuc">https://github.com/PPUC/libppuc</a><o:p></o:p></b></p>
 
 <p class=MsoNormal><b><o:p>&nbsp;</o:p></b></p>
 
