@@ -1,0 +1,557 @@
+ppucVersion: 1
+rom: dummy
+serialPort: com3
+platform: DE
+coinDoorClosedSwitch: 12
+gameOnSolenoid: 19
+debug: false
+boards:
+  -
+    description: IO-Board-0
+    number: 0
+    pollEvents: true
+  -
+    description: IO-Board-1
+    number: 1
+    pollEvents: false
+  -
+    description: IO-Board-3
+    number: 3
+    pollEvents: false
+dipSwitches: {  }
+switches:
+  -
+    description: coinDoorClosedSwitch
+    number: 12
+    board: 0
+    port: 15
+  -
+    description: GameOnSolenoid
+    number: 19
+    board: 0
+    port: 16
+ledStripes:
+  -
+    description: LED_PLAYFIELD_1+2
+    board: 1
+    port: 29
+    ledType: BGR
+    brightness: 255
+    amount: 89
+    lightUp: 150
+    afterGlow: 150
+    lamps:
+      -
+        description: Lamp-0
+        number: 0
+        ledNumber: 0
+        color: FFFFFF
+      -
+        description: Lamp-1
+        number: 1
+        ledNumber: 1
+        color: FFFFFF
+      -
+        description: Lamp-2
+        number: 2
+        ledNumber: 2
+        color: FFFFFF
+      -
+        description: Lamp-3
+        number: 3
+        ledNumber: 3
+        color: FFFFFF
+      -
+        description: Lamp-4
+        number: 4
+        ledNumber: 4
+        color: FFFFFF
+      -
+        description: Lamp-5
+        number: 5
+        ledNumber: 5
+        color: FFFFFF
+      -
+        description: Lamp-6
+        number: 6
+        ledNumber: 6
+        color: FFFFFF
+      -
+        description: Lamp-7
+        number: 7
+        ledNumber: 7
+        color: FFFFFF
+      -
+        description: Lamp-8
+        number: 8
+        ledNumber: 8
+        color: FFFFFF
+      -
+        description: Lamp-9
+        number: 9
+        ledNumber: 9
+        color: FFFFFF
+      -
+        description: Lamp-10
+        number: 10
+        ledNumber: 10
+        color: FFFFFF
+      -
+        description: Lamp-11
+        number: 11
+        ledNumber: 11
+        color: FFFFFF
+      -
+        description: Lamp-12
+        number: 12
+        ledNumber: 12
+        color: FFFFFF
+      -
+        description: Lamp-13
+        number: 13
+        ledNumber: 13
+        color: FFFFFF
+      -
+        description: Lamp-14
+        number: 14
+        ledNumber: 14
+        color: FFFFFF
+      -
+        description: Lamp-15
+        number: 15
+        ledNumber: 15
+        color: FFFFFF
+      -
+        description: Lamp-16
+        number: 16
+        ledNumber: 16
+        color: FFFFFF
+      -
+        description: Lamp-17
+        number: 17
+        ledNumber: 17
+        color: FFFFFF
+      -
+        description: Lamp-18
+        number: 18
+        ledNumber: 18
+        color: FFFFFF
+      -
+        description: Lamp-19
+        number: 19
+        ledNumber: 19
+        color: FFFFFF
+      -
+        description: Lamp-19
+        number: 19
+        ledNumber: 19
+        color: FFFFFF
+      -
+        description: Lamp-20
+        number: 20
+        ledNumber: 20
+        color: FFFFFF
+      -
+        description: Lamp-21
+        number: 21
+        ledNumber: 21
+        color: FFFFFF
+      -
+        description: Lamp-22
+        number: 22
+        ledNumber: 22
+        color: FFFFFF
+      -
+        description: Lamp-23
+        number: 23
+        ledNumber: 23
+        color: FFFFFF
+      -
+        description: Lamp-24
+        number: 24
+        ledNumber: 24
+        color: FFFFFF
+      -
+        description: Lamp-25
+        number: 25
+        ledNumber: 25
+        color: FFFFFF
+      -
+        description: Lamp-26
+        number: 26
+        ledNumber: 26
+        color: FFFFFF
+      -
+        description: Lamp-27
+        number: 27
+        ledNumber: 27
+        color: FFFFFF
+      -
+        description: Lamp-28
+        number: 28
+        ledNumber: 28
+        color: FFFFFF
+      -
+        description: Lamp-29
+        number: 29
+        ledNumber: 29
+        color: FFFFFF
+      -
+        description: Lamp-30
+        number: 30
+        ledNumber: 30
+        color: FFFFFF
+      -
+        description: Lamp-31
+        number: 31
+        ledNumber: 31
+        color: FFFFFF
+      -
+        description: Lamp-32
+        number: 32
+        ledNumber: 32
+        color: FFFFFF
+      -
+        description: Lamp-33
+        number: 33
+        ledNumber: 33
+        color: FFFFFF
+      -
+        description: Lamp-34
+        number: 34
+        ledNumber: 34
+        color: FFFFFF
+      -
+        description: Lamp-35
+        number: 35
+        ledNumber: 35
+        color: FFFFFF
+      -
+        description: Lamp-36
+        number: 36
+        ledNumber: 36
+        color: FFFFFF
+      -
+        description: Lamp-37
+        number: 37
+        ledNumber: 37
+        color: FFFFFF
+      -
+        description: Lamp-38
+        number: 38
+        ledNumber: 38
+        color: FFFFFF
+      -
+        description: Lamp-39
+        number: 39
+        ledNumber: 39
+        color: FFFFFF
+      -
+        description: Lamp-40
+        number: 40
+        ledNumber: 40
+        color: FFFFFF
+      -
+        description: Lamp-41
+        number: 41
+        ledNumber: 41
+        color: FFFFFF
+      -
+        description: Lamp-42
+        number: 42
+        ledNumber: 42
+        color: FFFFFF
+      -
+        description: Lamp-43
+        number: 43
+        ledNumber: 43
+        color: FFFFFF
+      -
+        description: Lamp-44
+        number: 44
+        ledNumber: 44
+        color: FFFFFF
+      -
+        description: Lamp-45
+        number: 45
+        ledNumber: 45
+        color: FFFFFF
+      -
+        description: Lamp-46
+        number: 46
+        ledNumber: 46
+        color: FFFFFF
+      -
+        description: Lamp-47
+        number: 47
+        ledNumber: 47
+        color: FFFFFF
+      -
+        description: Lamp-48
+        number: 48
+        ledNumber: 48
+        color: FFFFFF
+      -
+        description: Lamp-49
+        number: 49
+        ledNumber: 49
+        color: FFFFFF
+      -
+        description: Lamp-50
+        number: 50
+        ledNumber: 50
+        color: FFFFFF
+      -
+        description: Lamp-51
+        number: 51
+        ledNumber: 51
+        color: FFFFFF
+      -
+        description: Lamp-52
+        number: 52
+        ledNumber: 52
+        color: FFFFFF
+      -
+        description: Lamp-53
+        number: 53
+        ledNumber: 53
+        color: FFFFFF
+      -
+        description: Lamp-54
+        number: 54
+        ledNumber: 54
+        color: FFFFFF
+      -
+        description: Lamp-55
+        number: 55
+        ledNumber: 55
+        color: FFFFFF
+      -
+        description: Lamp-56
+        number: 56
+        ledNumber: 56
+        color: FFFFFF
+      -
+        description: Lamp-57
+        number: 57
+        ledNumber: 57
+        color: FFFFFF
+      -
+        description: Lamp-58
+        number: 58
+        ledNumber: 58
+        color: FFFFFF
+      -
+        description: Lamp-59
+        number: 59
+        ledNumber: 59
+        color: FFFFFF
+      -
+        description: Lamp-60
+        number: 60
+        ledNumber: 60
+        color: FFFFFF
+      -
+        description: Lamp-61
+        number: 61
+        ledNumber: 61
+        color: FFFFFF
+      -
+        description: Lamp-62
+        number: 62
+        ledNumber: 62
+        color: FFFFFF
+      -
+        description: Lamp-63
+        number: 63
+        ledNumber: 63
+        color: FFFFFF
+      -
+        description: Lamp-64
+        number: 64
+        ledNumber: 64
+        color: FFFFFF
+      -
+        description: Lamp-65
+        number: 65
+        ledNumber: 65
+        color: FFFFFF
+      -
+        description: Lamp-66
+        number: 66
+        ledNumber: 66
+        color: FFFFFF
+      -
+        description: Lamp-67
+        number: 67
+        ledNumber: 67
+        color: FFFFFF
+      -
+        description: Lamp-68
+        number: 68
+        ledNumber: 68
+        color: FFFFFF
+      -
+        description: Lamp-69
+        number: 69
+        ledNumber: 69
+        color: FFFFFF
+      -
+        description: Lamp-70
+        number: 70
+        ledNumber: 70
+        color: FFFFFF
+      -
+        description: Lamp-71
+        number: 71
+        ledNumber: 71
+        color: FFFFFF
+      -
+        description: Lamp-72
+        number: 72
+        ledNumber: 72
+        color: FFFFFF
+      -
+        description: Lamp-73
+        number: 73
+        ledNumber: 73
+        color: FFFFFF
+      -
+        description: Lamp-74
+        number: 74
+        ledNumber: 74
+        color: FFFFFF
+      -
+        description: Lamp-75
+        number: 75
+        ledNumber: 75
+        color: FFFFFF
+      -
+        description: Lamp-76
+        number: 76
+        ledNumber: 76
+        color: FFFFFF
+      -
+        description: Lamp-77
+        number: 77
+        ledNumber: 77
+        color: FFFFFF
+      -
+        description: Lamp-78
+        number: 78
+        ledNumber: 78
+        color: FFFFFF
+      -
+        description: Lamp-79
+        number: 79
+        ledNumber: 79
+        color: FFFFFF
+      -
+        description: Lamp-80
+        number: 80
+        ledNumber: 80
+        color: FFFFFF
+      -
+        description: Lamp-81
+        number: 81
+        ledNumber: 81
+        color: FFFFFF
+      -
+        description: Lamp-82
+        number: 82
+        ledNumber: 82
+        color: FFFFFF
+      -
+        description: Lamp-83
+        number: 83
+        ledNumber: 83
+        color: FFFFFF
+      -
+        description: Lamp-84
+        number: 84
+        ledNumber: 84
+        color: FFFFFF
+      -
+        description: Lamp-85
+        number: 85
+        ledNumber: 85
+        color: FFFFFF
+      -
+        description: Lamp-86
+        number: 86
+        ledNumber: 86
+        color: FFFFFF
+      -
+        description: Lamp-87
+        number: 87
+        ledNumber: 87
+        color: FFFFFF
+      -
+        description: Lamp-88
+        number: 88
+        ledNumber: 88
+        color: FFFFFF
+      -
+        description: Lamp-89
+        number: 89
+        ledNumber: 89
+        color: FFFFFF
+      -
+        description: Lamp-90
+        number: 90
+        ledNumber: 90
+        color: FFFFFF
+      -
+        description: Lamp-91
+        number: 91
+        ledNumber: 91
+        color: FFFFFF
+      -
+        description: Lamp-92
+        number: 92
+        ledNumber: 92
+        color: FFFFFF
+      -
+        description: Lamp-93
+        number: 93
+        ledNumber: 93
+        color: FFFFFF
+      -
+        description: Lamp-94
+        number: 94
+        ledNumber: 94
+        color: FFFFFF
+      -
+        description: Lamp-95
+        number: 95
+        ledNumber: 95
+        color: FFFFFF
+      -
+        description: Lamp-96
+        number: 96
+        ledNumber: 96
+        color: FFFFFF
+      -
+        description: Lamp-97
+        number: 97
+        ledNumber: 97
+        color: FFFFFF
+      -
+        description: Lamp-98
+        number: 98
+        ledNumber: 98
+        color: FFFFFF
+      -
+        description: Lamp-99
+        number: 99
+        ledNumber: 99
+        color: FFFFFF
+      -
+        description: Lamp-100
+        number: 100
+        ledNumber: 100
+        color: FFFFFF
+    flashers: {  }
+    gi: {  }
+pwmOutput: {  }
+mechs: {  }
